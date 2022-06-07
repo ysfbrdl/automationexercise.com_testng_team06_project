@@ -1,0 +1,23 @@
+After clone the project to your local computer
+    1. Associate our project with your git
+    2. Then create your branch in IntelliJ Terminal
+    3. Then Create your testcase package under pages package
+    4. Then Create your page classes according to your testcase into your package
+    5. Finally Create your test class under tests package
+
+Package name will be like this "testcase1, 2, 3.."
+
+Class names will be like this "test case1,2,3.."
+
+Test method name will be task name like this "registerUser()"
+
+If it possible use exist data from configuration.properties
+
+When initializing please try to use this variable name format
+    For example:
+    if it is button --------> loginButton
+    if it is link ----------> loginLink
+    if it is text ----------> loginText
+    if it is InputBox ------> loginBox
+    if it is Radio Button --> loginRadioButton
+
