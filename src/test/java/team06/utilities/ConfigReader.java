@@ -1,5 +1,5 @@
 package team06.utilities;
-import org.bouncycastle.util.Properties;
+import java.util.Properties;
 import java.io.FileInputStream;
 
 public class ConfigReader {
@@ -24,7 +24,7 @@ public class ConfigReader {
     //And return the value as String
     //We create this method to read the file
     public static String getProperty(String key){
-        return properties.getPropertyValue(key);
+        return properties.getProperty(key);
     }
 //    //TEST IF LOGIC WORKS
 //    public static void main(String[] args) {
