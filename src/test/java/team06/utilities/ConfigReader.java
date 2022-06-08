@@ -1,10 +1,11 @@
 package team06.utilities;
+import org.bouncycastle.util.Properties;
 import java.io.FileInputStream;
-import java.util.Properties;
+
 public class ConfigReader {
     //This class reads the configuration.properties file
     //Create Properties instance
-    private static Properties properties;
+    protected static Properties properties;
     static {
         //path of the configuration file
         String path="configuration.properties";
@@ -23,16 +24,15 @@ public class ConfigReader {
     //And return the value as String
     //We create this method to read the file
     public static String getProperty(String key){
-        String value=properties.getProperty(key);
-        return value;
+        return properties.getPropertyValue(key);
     }
-    //TEST IF LOGIC WORKS
-    public static void main(String[] args) {
-        System.out.println(properties.getProperty("techproed_url"));
-        System.out.println(properties.getProperty("google_url"));
-        System.out.println(properties.getProperty("username"));
-        System.out.println(properties.getProperty("password"));
-        System.out.println(properties.getProperty("kafiefiuwegfk")); //it gives null because we do not have key like this in configuration.preperties files
-    }
+//    //TEST IF LOGIC WORKS
+//    public static void main(String[] args) {
+//        System.out.println(properties.getPropertyValue("techproed_url"));
+//        System.out.println(properties.getPropertyValue("google_url"));
+//        System.out.println(properties.getPropertyValue("username"));
+//        System.out.println(properties.getPropertyValue("password"));
+//        System.out.println(properties.getPropertyValue("kafiefiuwegfk")); //it gives null because we do not have key like this in configuration.preperties files
+//    }
 
 }
