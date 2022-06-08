@@ -1,13 +1,14 @@
 package team06.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
+
 public class ConfigReader {
     //This class reads the configuration.properties file
     //Create Properties instance
-    private static Properties properties;
+    private static java.util.Properties properties;
     static {
         //path of the configuration file
-        String path="configuration.properties";
+        String path= "configuration.properties";
         try {
             //Opening configuration.properties file using FileInputStream
             FileInputStream fileInputStream = new FileInputStream(path);
@@ -26,13 +27,14 @@ public class ConfigReader {
         String value=properties.getProperty(key);
         return value;
     }
-    //TEST IF LOGIC WORKS
+    /*TEST IF LOGIC WORKS
     public static void main(String[] args) {
         System.out.println(properties.getProperty("techproed_url"));
         System.out.println(properties.getProperty("google_url"));
         System.out.println(properties.getProperty("username"));
         System.out.println(properties.getProperty("password"));
         System.out.println(properties.getProperty("kafiefiuwegfk")); //it gives null because we do not have key like this in configuration.preperties files
+
+     */
     }
 
-}
