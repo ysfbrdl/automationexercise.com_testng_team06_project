@@ -31,5 +31,4 @@ public class TestPage6 {
     public WebElement statusMessage;
     @FindBy(xpath = "//i[@class='fa fa-angle-double-left']")
     public WebElement homeButton;
-
 }

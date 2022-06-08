@@ -44,6 +44,5 @@ public class TestCase6 {
         // Click 'Home' button and verify that landed to home page successfully
         testPage6.homeButton.click();
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(),ConfigReader.getProperty("automation_exercise_url"));
-
     }
 }
