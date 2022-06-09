@@ -2,7 +2,6 @@ package team06.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import team06.pages.testcase1.AutomationExercisePage;
 import team06.pages.testcase4.TestPage4;
 import team06.utilities.ConfigReader;
 import team06.utilities.Driver;
