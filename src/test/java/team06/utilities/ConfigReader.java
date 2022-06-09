@@ -1,4 +1,6 @@
 package team06.utilities;
+import org.openqa.selenium.interactions.Actions;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 public class ConfigReader {
@@ -34,5 +36,6 @@ public class ConfigReader {
         System.out.println(properties.getProperty("password"));
         System.out.println(properties.getProperty("kafiefiuwegfk")); //it gives null because we do not have key like this in configuration.preperties files
     }
+
 
 }
