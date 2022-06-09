@@ -8,7 +8,11 @@ import team06.utilities.Driver;
 public class VerificationPage11 {
     public VerificationPage11() {
         PageFactory.initElements(Driver.getDriver(), this);
+<<<<<<< HEAD
 }
+=======
+    }
+>>>>>>> main
 
 
 

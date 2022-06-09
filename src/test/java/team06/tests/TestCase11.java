@@ -29,7 +29,11 @@ public class TestCase11 {
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://www.automationexercise.com/");
 
         //       4. Click 'Cart' button
+<<<<<<< HEAD
             verificationPage11.cartButton.click();
+=======
+        verificationPage11.cartButton.click();
+>>>>>>> main
         //      5. Scroll down to footer
 
         Actions action=new Actions(Driver.getDriver());
@@ -50,4 +54,8 @@ public class TestCase11 {
 
         Driver.closeDriver();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
