@@ -9,5 +9,8 @@
         <module name="automationexercise.com_testng_team06_project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="automationexercise.com_testng_team06_project" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
